@@ -8,6 +8,37 @@
 
 <style>
 
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
 body {
 background-color: #44C9C1;
 }
@@ -31,6 +62,21 @@ display:inline;
   color: white;
 }
 
+.button2 {
+  position: absolute;
+  left: 200px;
+  background-color: #44C9C1;
+  padding: 10px 50px;
+  transition-duration: 0.4s;
+  color: white; 
+  font-size: 22px;
+}
+
+.button2:hover {
+  background-color: #E61997;
+  color: white;
+}
+
 @font-face {
    font-family: F1;
    src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.ttf")
@@ -46,6 +92,16 @@ display:inline;
 
 <body>
 
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#Recruitment Server">Recruitment Server</a>
+</div>
+
+<br>
+<br>
+<br>
+
 <marquee behavior="alternate" direction="right"><h1>***THIS SITE IS IN DEVELOPMENT***</h1></marquee>
 
 <hr>
@@ -57,6 +113,7 @@ display:inline;
 <br>
 
 <center><button class="button button1">Tiers</button></center>
+<button class="button button2">Home</button>
 
 
 
